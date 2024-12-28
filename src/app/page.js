@@ -8,13 +8,16 @@ export default function Home() {
             <form
                 action={async () => {
                     "use server"
-                    await signIn()
+                    await signIn("github")
                 }}
             >
                 <Button type="submit">
                     Signin with GitHub
                 </Button>
             </form>
+            
+            
+
     
         </div>
     )
